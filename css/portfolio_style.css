@@ -1,0 +1,113 @@
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  text-align:left;
+}
+li {
+    float: right;
+    border-right: 1px solid #bbb;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+    color: white;
+}
+#katie{
+  border-radius: 50%;
+  width: 150px;
+}
+h1{
+  margin: 100px 0px 0px 0px;
+  font-size: 60px;
+}
+h2{
+  font-size: 60px;
+}
+p{
+  margin: 25px 150px 100px 80px;
+}
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+#home {
+  background-image: url(  https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-size: cover;
+}
+#about {
+  background-image: url(  https://images.pexels.com/photos/479453/pexels-photo-479453.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-size: cover;
+}
+#portfolio {
+  background-image: url(  https://images.pexels.com/photos/5010/trunk-rings.jpg?h=350&auto=compress&cs=tinysrgb);
+  background-size: cover;
+}
+#contact {
+  background-image: url(  
+ https://images.pexels.com/photos/257937/pexels-photo-257937.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-size: cover;
+}
+body{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+.fa {
+    padding: 40px;
+    font-size: 60px;
+    width: 65px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+    cursor:pointer;
+}
+.fa-linkedin {
+    background: #4875B4;
+    color: white;
+}
+.fa-github {
+    background: #000000;
+    color: white;
+}
+.fa-free-code-camp {
+    background: #006400;
+    color: white;
+}
+button{
+  background: none;
+}
+#outer{
+      width:100%;
+    text-align: center;
+}
+.inner{
+    display: inline-block;
+    margin: 10px;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+}
+.inner:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.thumbnail{
+    height: 150px;
+    width: 250px;
+    margin: 0px;
