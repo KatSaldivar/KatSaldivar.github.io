@@ -1,7 +1,7 @@
 ul {
     position: fixed;
     top: 0;
-    width: 100%;  
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,6 +12,7 @@ li {
     float: right;
     border-right: 1px solid #bbb;
 }
+
 
 a {
     display: block;
@@ -54,7 +55,7 @@ p{
   background-size: cover;
 }
 #contact {
-  background-image: url(  
+  background-image: url(
  https://images.pexels.com/photos/257937/pexels-photo-257937.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
   background-size: cover;
 }
