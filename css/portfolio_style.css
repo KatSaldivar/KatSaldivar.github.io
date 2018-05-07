@@ -1,19 +1,17 @@
 ul {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 90%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
-  text-align:left;
+    text-align:left;
 }
 li {
     float: right;
-    border-right: 1px solid #bbb;
+    padding-right: 30px;
+    /*border-right: 1px solid #bbb;*/
 }
-
-
 a {
     display: block;
     padding: 8px;
@@ -21,30 +19,34 @@ a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
     color: white;
+    border-radius: 6px;
+    opacity: 0.7;
 }
 #katie{
   border-radius: 50%;
-  width: 150px;
+  width: 230px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+
 }
 h1{
-  margin: 100px 0px 0px 0px;
-  font-size: 60px;
+  /*margin: 100px 0px 0px 0px;*/
+  font-size: 80px;
 }
 h2{
   font-size: 60px;
 }
 p{
-  margin: 25px 150px 100px 80px;
+  /*margin: 25px 150px 100px 80px;*/
 }
 .section {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding: 75px;
 }
 #home {
-  background-image: url(  https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
-  background-size: cover;
+  background-color: blue;
+  /*background-image: url(  https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  */background-size: cover;
 }
 #about {
   background-image: url(  https://images.pexels.com/photos/479453/pexels-photo-479453.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
@@ -60,7 +62,7 @@ p{
   background-size: cover;
 }
 body{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
@@ -92,12 +94,16 @@ button{
   background: none;
 }
 #outer{
-      width:100%;
+    width:100%;
     text-align: center;
+    padding-top: 0px;
+    border: 1px solid black;
 }
 .inner{
     display: inline-block;
-    margin: 10px;
+    vertical-align: top;
+    margin: 0px;
+    border: 1px solid black;
 }
 img {
     border: 1px solid #ddd;
@@ -105,7 +111,7 @@ img {
     padding: 5px;
     width: 200px;
 }
-.inner:hover {
+.thumbnail:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 .thumbnail{
