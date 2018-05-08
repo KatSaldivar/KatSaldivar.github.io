@@ -10,6 +10,7 @@ ul {
 li {
     float: right;
     padding-right: 30px;
+    font-size: 25px;
     /*border-right: 1px solid #bbb;*/
 }
 a {
@@ -37,6 +38,9 @@ h1{
 h2{
   font-size: 60px;
 }
+h3{
+  font-weight: bold;
+}
 p{
   /*margin: 25px 150px 100px 80px;*/
 }
@@ -49,17 +53,14 @@ p{
   */background-size: cover;
 }
 #about {
-  background-image: url(  https://images.pexels.com/photos/479453/pexels-photo-479453.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
-  background-size: cover;
+  background-color: white;
+  /*background-image: url(  https://images.pexels.com/photos/479453/pexels-photo-479453.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  */background-size: cover;
 }
 #portfolio {
-  background-image: url(  https://images.pexels.com/photos/5010/trunk-rings.jpg?h=350&auto=compress&cs=tinysrgb);
-  background-size: cover;
-}
-#contact {
-  background-image: url(
- https://images.pexels.com/photos/257937/pexels-photo-257937.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
-  background-size: cover;
+  background-color: green;
+  /*background-image: url(  https://images.pexels.com/photos/5010/trunk-rings.jpg?h=350&auto=compress&cs=tinysrgb);
+  */background-size: cover;
 }
 body{
   font-family: 'Montserrat', sans-serif;
@@ -93,17 +94,13 @@ body{
 button{
   background: none;
 }
-#outer{
+.outer{
     width:100%;
     text-align: center;
-    padding-top: 0px;
-    border: 1px solid black;
 }
 .inner{
     display: inline-block;
     vertical-align: top;
-    margin: 0px;
-    border: 1px solid black;
 }
 img {
     border: 1px solid #ddd;
@@ -111,10 +108,17 @@ img {
     padding: 5px;
     width: 200px;
 }
+.portfolio-item{
+  display: flex;
+}
+.details {
+  text-align: left;
+  padding-left: 20px;
+}
 .thumbnail:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 .thumbnail{
-    height: 150px;
-    width: 250px;
+    height: 200px;
+    width: 320px;
     margin: 0px;
