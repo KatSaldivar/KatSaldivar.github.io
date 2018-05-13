@@ -7,7 +7,6 @@ ul {
     padding: 0;
     text-align:left;
     background-color: #333;
-
 }
 li {
     float: right;
@@ -18,18 +17,20 @@ a {
     padding: 8px;
     color: white;
 }
-
+a:hover:not(.active) {
+  color: #04b9d1;
+}
 li a:hover:not(.active) {
-    color: white;
     border-radius: 6px;
-    opacity: 0.7;
+}
+a:visited {
+  color: white;
 }
 #katie{
   border-radius: 50%;
   width: 230px;
   margin-right: 50px;
   margin-bottom: 0px;
-
 }
 h1{
   /*margin: 100px 0px 0px 0px;*/
@@ -45,9 +46,6 @@ h4 {
   font-weight: bold;
   font-size: 25px;
 }
-p{
-  /*margin: 25px 150px 100px 80px;*/
-}
 .section {
   padding: 75px;
 }
@@ -61,14 +59,13 @@ p{
   width: 100%;
 }
 #about {
-  background-color: grey;
-  /*background-image: url(  https://images.pexels.com/photos/479453/pexels-photo-479453.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
-  */background-size: cover;
+  background-color: rgb(73, 75, 75);
+  background-size: cover;
   height: 100vh;
   width: 100%;
 }
 #portfolio {
-  background: url(https://images.pexels.com/photos/5010/trunk-rings.jpg?h=350&auto=compress&cs=tinysrgb) no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.pexels.com/photos/137219/pexels-photo-137219.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
   background-size: cover;
 }
 body{
@@ -79,8 +76,8 @@ body{
   text-align: center;
 }
 .fa {
-    padding: 40px;
-    font-size: 60px;
+    padding: 20px;
+    font-size: 50px;
     width: 65px;
     text-align: center;
     text-decoration: none;
@@ -105,7 +102,21 @@ body{
 button{
   background: none;
 }
-.outer{
+.work{
+  transition: 0.25s;
+  border: solid 3px white;
+  border-radius: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.workButton a {
+  text-decoration: none;
+}
+.work:hover{
+  background: #04b9d1;
+  text-decoration: none;
+}uter{
     width:100%;
     text-align: center;
 }
@@ -114,10 +125,7 @@ button{
     vertical-align: top;
 }
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 200px;
+    
 }
 .portfolio-item{
   display: flex;
@@ -127,11 +135,12 @@ img {
   text-align: left;
   padding-left: 20px;
 }
-.thumbnail:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
 .thumbnail{
     height: 200px;
     width: 320px;
-
+    border-radius: 20px;
+    transition: transform .2s;
+  }
+  .thumbnail:hover {
+    transform: scale(1.1);
   }
