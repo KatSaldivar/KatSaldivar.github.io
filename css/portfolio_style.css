@@ -1,4 +1,4 @@
-ul {
+nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -8,26 +8,23 @@ ul {
     text-align:left;
     background-color: #333;
 }
-li {
+nav a {
     float: right;
     padding-right: 30px;
     font-size: 25px;
 }
-a {
-    padding: 8px;
-    color: white;
+.hamburger {
+  display: none;
 }
-a:hover:not(.active) {
+a {
+  padding: 8px;
+  color: white;
+}
+a:hover {
   color: #04b9d1;
 }
-li a:hover:not(.active) {
-    border-radius: 6px;
-}
-li a.active {
-  color: #018294;
-}
-.icon {
-  display: none;
+nav a:hover:not(.active) {
+  border-radius: 6px;
 }
 #katie{
   border-radius: 50%;
@@ -119,7 +116,8 @@ button{
 .work:hover{
   background: #04b9d1;
   text-decoration: none;
-}uter{
+}
+.outer{
     width:100%;
     text-align: center;
 }
@@ -143,4 +141,24 @@ button{
   }
   .thumbnail:hover {
     transform: scale(1.1);
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.hamburger {
+      float: left;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
   }
