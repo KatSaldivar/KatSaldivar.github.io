@@ -1,30 +1,38 @@
-nav {
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.topnav {
     position: fixed;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
+    /*top: 0;*/
+    width: 100vw;
     margin: 0;
     padding: 0;
-    text-align:left;
+    /*text-align:left;*/
     background-color: #333;
 }
-nav a {
-    float: right;
-    padding-right: 30px;
-    font-size: 25px;
+ul {
+  display: flex;
 }
-.hamburger {
+li {
+  list-style-type: none;
+  margin: 0 2vh;
+  font-size: 3vh;
+  padding: 1vh;
+  align-self: flex-end;
+}
+#navButton {
   display: none;
 }
 a {
-  padding: 8px;
   color: white;
 }
 a:hover {
   color: #04b9d1;
-}
-nav a:hover:not(.active) {
-  border-radius: 6px;
+  text-decoration: none;
 }
 #katie{
   border-radius: 50%;
@@ -67,13 +75,6 @@ h4 {
 #portfolio {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.pexels.com/photos/137219/pexels-photo-137219.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
   background-size: cover;
-}
-body{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  color: white;
-  text-align: center;
 }
 .social {
     padding: 20px;
@@ -143,15 +144,34 @@ button{
     transform: scale(1.1);
   }
   @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.hamburger {
-      float: left;
+    /*.topnav a:not(:first-child) {display: none;}*/
+    #navButton {
+      display: block;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 1vw;
+      font-size: 3vh;
+      align-self: flex-start;
+    }
+    #navButton:hover {
+      color: #04b9d1;
+      text-decoration: none;
+    }
+    ul {
+      flex-direction: column;
+    }
+    li {
+      margin: 0;
+      align-self: flex-start;
+    }
+    li a {
       display: block;
     }
   }
-  @media screen and (max-width: 600px) {
+  /*@media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
+    .topnav.responsive a.hamburger {
       position: absolute;
       right: 0;
       top: 0;
