@@ -1,7 +1,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 3vh;
   color: white;
   text-align: center;
 }
@@ -42,17 +42,17 @@ a:hover {
 }
 h1{
   /*margin: 100px 0px 0px 0px;*/
-  font-size: 80px;
+  font-size: 13vh;
 }
 h2{
-  font-size: 60px;
+  font-size: 10vh;
 }
 h3{
-  font-size: 40px;
+  font-size: 6vh;
 }
 h4 {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 4vh;
 }
 .section {
   padding: 75px;
