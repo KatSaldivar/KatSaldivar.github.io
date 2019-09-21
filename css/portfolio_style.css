@@ -23,8 +23,11 @@ a:hover:not(.active) {
 li a:hover:not(.active) {
     border-radius: 6px;
 }
-a:visited {
-  color: white;
+li a.active {
+  color: #018294;
+}
+.icon {
+  display: none;
 }
 #katie{
   border-radius: 50%;
@@ -75,7 +78,7 @@ body{
   color: white;
   text-align: center;
 }
-.fa {
+.social {
     padding: 20px;
     font-size: 50px;
     width: 65px;
@@ -83,7 +86,7 @@ body{
     text-decoration: none;
     border-radius: 50%;
 }
-.fa:hover {
+.social:hover {
     opacity: 0.7;
     cursor:pointer;
 }
@@ -123,9 +126,6 @@ button{
 .inner{
     display: inline-block;
     vertical-align: top;
-}
-img {
-    
 }
 .portfolio-item{
   display: flex;
