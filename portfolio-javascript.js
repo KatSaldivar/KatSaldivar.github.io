@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
     // Sticky Header
-$(window).scroll(function() {
+/*$(window).scroll(function() {
 
     if ($(window).scrollTop() > 100) {
         $('.main_h').addClass('sticky');
     } else {
         $('.main_h').removeClass('sticky');
     }
-});
+});*/
 
 // Mobile Navigation
 $('.mobile-toggle').click(function() {
@@ -40,8 +40,8 @@ $('a').click(function(event) {
 //Resources: 
 //https://codepen.io/MightyShaban/pen/CIfdj
 
-
+//TO DO:
 //add shiny animation to button
 //make sure content is responsive
 //try scrolly image thing
-//https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f
+//remove old css from git control
