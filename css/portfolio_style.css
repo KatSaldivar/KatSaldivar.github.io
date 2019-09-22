@@ -1,3 +1,4 @@
+
 body{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -5,26 +6,30 @@ body{
   color: white;
   text-align: center;
 }
-.topnav {
+nav {
     position: fixed;
     /*top: 0;*/
     width: 100vw;
-    margin: 0;
-    padding: 0;
     background-color: #333;
 }
 ul {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 li {
   list-style-type: none;
   margin: 0 2vh;
   font-size: 3vh;
-  padding: 1vh;
   align-self: flex-end;
 }
-#navButton {
-  display: none;
+li a {
+  display: block;
+  /*width: 100vw;*/
+  padding: 1vh;
+}
+li a:hover {
+  background-color: #C6E9FF;
 }
 a {
   color: white;
@@ -166,5 +171,10 @@ button{
     }
     li a {
       display: block;
+    }
+  }
+  @media screen and (min-width: 601px){
+    #navButton {
+      display: none;
     }
   }
