@@ -14,7 +14,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 600px) {
   .main_h {
     padding-top: 25px;
   }
@@ -48,7 +48,7 @@
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 600px) {
   .logo {
     float: none;
   }
@@ -64,7 +64,7 @@ nav {
   width: 60%;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 600px) {
   nav {
     width: 100%;
   }
@@ -77,7 +77,7 @@ nav ul {
   float: right;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 600px) {
   nav ul {
     padding-top: 10px;
     margin-bottom: 22px;
@@ -93,7 +93,7 @@ nav ul li {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 600px) {
   nav ul li {
     width: 100%;
     padding: 7px 0;
@@ -120,7 +120,7 @@ nav ul a {
   transition: all 200ms ease-in;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 600px) {
   .mobile-toggle {
     display: block;
   }
@@ -281,10 +281,17 @@ button {
 }
 
 .portfolio-item {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .details {
@@ -300,6 +307,13 @@ button {
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .thumbnail {
+    height: 30vh;
+    width: 70vw;
+  }
 }
 
 .thumbnail:hover {

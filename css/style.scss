@@ -1,6 +1,6 @@
 // MQ trigger
 @mixin small {
-    @media only screen and (max-width: 766px) {
+    @media only screen and (max-width: 600px) {
       @content;
     }
   }
@@ -128,7 +128,7 @@
       display: block;
     }
   }
-  
+
   .mobile-toggle:hover {
     color: $turquoise;
   }
@@ -248,8 +248,12 @@
       vertical-align: top;
   }
   .portfolio-item{
-    display: flex;
     margin-top: 40px;
+    display: flex;
+    //flex-flow: row wrap;
+    @include small {
+      flex-wrap: wrap;
+    }
   }
   .details {
     text-align: left;
@@ -260,6 +264,10 @@
       width: 320px;
       border-radius: 20px;
       transition: transform .2s;
+      @include small {
+        height: 30vh;//200px;
+        width: 70vw;//320px;
+      }
     }
     .thumbnail:hover {
       transform: scale(1.1);
