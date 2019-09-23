@@ -17,7 +17,7 @@
     max-height: 70px;
     z-index: 999;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 17px;
     background: none;
     overflow: hidden;
     -webkit-transition: all 0.3s;
@@ -250,7 +250,6 @@
   .portfolio-item{
     margin-top: 40px;
     display: flex;
-    //flex-flow: row wrap;
     @include small {
       flex-wrap: wrap;
     }
