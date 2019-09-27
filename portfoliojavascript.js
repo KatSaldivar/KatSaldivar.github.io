@@ -34,4 +34,4 @@ $('a').click(function(event) {
 //add shiny animation to button
 //make sure content is responsive
 //try scrolly image thing
-//remove old css from git control
+//remove old files from git control
