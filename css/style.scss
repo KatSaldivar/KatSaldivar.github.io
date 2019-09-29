@@ -1,6 +1,6 @@
 // MQ trigger
 @mixin small {
-    @media only screen and (max-width: 600px) {
+    @media all and (max-width: 700px) {
       @content;
     }
   }
@@ -16,7 +16,7 @@
     position: fixed;
     max-height: 70px;
     z-index: 999;
-    width: 100%;
+    width: 100vw;
     padding-top: 17px;
     background: none;
     overflow: hidden;
@@ -69,7 +69,7 @@
     float: right;
     width: 60%;
     @include small {
-      width: 100%;
+      width: 100vw;
     }
   
     ul {
@@ -82,7 +82,7 @@
         margin-bottom: 22px;
         float: left;
         text-align: center;
-        width: 100%;
+        width: 100vw;
       }
   
       li {
@@ -90,7 +90,7 @@
         margin-left: 35px;
         line-height: 1.5;
         @include small {
-          width: 100%;
+          width: 100vw;
           padding: 7px 0;
           margin: 0;
         }
@@ -119,22 +119,28 @@
       display: block;
     }
     
-    span {
+    /*span {
       width: 30px;
       height: 4px;
       margin-bottom: 6px;
       border-radius: 1000px;
       background: $lt-grey;
       display: block;
-    }
+    }*/
   }
 
-  .mobile-toggle:hover {
+  .mobile-toggle:hover{
     color: $turquoise;
+  }
+
+  .mobile-toggle:focus {
+    @include small{
+      color: $turquoise;
+    }
   }
   
   .row {
-    width: 100%;
+    width: 100vw;
     max-width: 940px;
     margin: 0 auto;
     position: relative;
@@ -151,9 +157,15 @@
   a {
     color: white;
   }
-  a:hover {
+  a:hover{
     color: $turquoise !important;
     text-decoration: none;
+  }
+  a:focus {
+    @include small{
+    color: $turquoise !important;
+    text-decoration: none;
+    }
   }
   #katie{
     border-radius: 50%;
@@ -182,19 +194,19 @@
     margin-top: 10%;
   }
   #home {
-    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(  https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background:linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url(  https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
   }
   #about {
     background-color: rgb(73, 75, 75);
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
   }
   #portfolio {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.pexels.com/photos/137219/pexels-photo-137219.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(https://images.pexels.com/photos/137219/pexels-photo-137219.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
     background-size: cover;
   }
   .social {
@@ -205,9 +217,16 @@
       text-decoration: none;
       border-radius: 50%;
   }
-  .social:hover {
-      opacity: 0.7;
+  .social:hover{
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+  .social:focus {
+      @include small{
+        opacity: 0.7;
       cursor:pointer;
+      }
   }
   .fa-linkedin {
       background: #4875B4;
@@ -223,13 +242,14 @@
   }
   button{
     background: none;
+    outline: none !important;
   }
   .work{
     transition: 0.25s;
     border: solid 3px white;
     border-radius: 100px;
     text-decoration: none;
-    color: white;
+    color: white !important;
     font-size: 25px;
   }
   .workButton a {
@@ -238,10 +258,20 @@
   .work:hover{
     background: #04b9d1;
     text-decoration: none;
+    color: $grey !important;
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
-    //@include shine1;
+  }
+
+  .work:focus{
+    @include small{
+      background: #04b9d1;
+      text-decoration: none;
+      -webkit-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+      transition: background-color 1000ms linear;
+    }
   }
   .outer{
       width:100%;
@@ -262,16 +292,30 @@
     text-align: left;
     padding-left: 20px;
   }
+  .details a:hover{
+    text-decoration: underline;
+  }
+
+  .details a:focus{
+    @include small{
+      text-decoration: underline;
+    }
+  }
   .thumbnail{
-      height: 200px;
-      width: 320px;
+      height: auto;
+      width: 35vw;
       border-radius: 20px;
       transition: transform .2s;
       @include small {
-        height: 30vh;//200px;
-        width: 70vw;//320px;
+        width: 75vw;//320px;
       }
     }
-    .thumbnail:hover {
+    .thumbnail:hover{
       transform: scale(1.1);
+    }
+    
+    .thumbnail:focus {
+      @include small{
+      transform: scale(1.1);
+      }
     }

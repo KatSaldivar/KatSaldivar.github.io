@@ -31,7 +31,6 @@ $('a').click(function(event) {
 //https://codepen.io/MightyShaban/pen/CIfdj
 
 //TO DO:
-//add shiny animation to button
 //make sure content is responsive
 //try scrolly image thing
-//remove old files from git control
+//remove old files from git repo

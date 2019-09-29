@@ -2,7 +2,7 @@
   position: fixed;
   max-height: 70px;
   z-index: 999;
-  width: 100%;
+  width: 100vw;
   padding-top: 17px;
   background: none;
   overflow: hidden;
@@ -14,7 +14,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .main_h {
     padding-top: 25px;
   }
@@ -48,7 +48,7 @@
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .logo {
     float: none;
   }
@@ -64,9 +64,9 @@ nav {
   width: 60%;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 700px) {
   nav {
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -77,13 +77,13 @@ nav ul {
   float: right;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 700px) {
   nav ul {
     padding-top: 10px;
     margin-bottom: 22px;
     float: left;
     text-align: center;
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -93,9 +93,9 @@ nav ul li {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 700px) {
   nav ul li {
-    width: 100%;
+    width: 100vw;
     padding: 7px 0;
     margin: 0;
   }
@@ -118,29 +118,34 @@ nav ul a {
   width: 30px;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
+  /*span {
+      width: 30px;
+      height: 4px;
+      margin-bottom: 6px;
+      border-radius: 1000px;
+      background: $lt-grey;
+      display: block;
+    }*/
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .mobile-toggle {
     display: block;
   }
-}
-
-.mobile-toggle span {
-  width: 30px;
-  height: 4px;
-  margin-bottom: 6px;
-  border-radius: 1000px;
-  background: #a6a6a6;
-  display: block;
 }
 
 .mobile-toggle:hover {
   color: #04b9d1;
 }
 
+@media all and (max-width: 700px) {
+  .mobile-toggle:focus {
+    color: #04b9d1;
+  }
+}
+
 .row {
-  width: 100%;
+  width: 100vw;
   max-width: 940px;
   margin: 0 auto;
   position: relative;
@@ -162,6 +167,13 @@ a {
 a:hover {
   color: #04b9d1 !important;
   text-decoration: none;
+}
+
+@media all and (max-width: 700px) {
+  a:focus {
+    color: #04b9d1 !important;
+    text-decoration: none;
+  }
 }
 
 #katie {
@@ -198,23 +210,23 @@ h4 {
 }
 
 #home {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 #about {
   background-color: #494b4b;
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 #portfolio {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://images.pexels.com/photos/137219/pexels-photo-137219.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/137219/pexels-photo-137219.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(https://images.pexels.com/photos/137219/pexels-photo-137219.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/137219/pexels-photo-137219.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -230,6 +242,13 @@ h4 {
 .social:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+@media all and (max-width: 700px) {
+  .social:focus {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 }
 
 .fa-linkedin {
@@ -249,6 +268,7 @@ h4 {
 
 button {
   background: none;
+  outline: none !important;
 }
 
 .work {
@@ -257,7 +277,7 @@ button {
   border: solid 3px white;
   border-radius: 100px;
   text-decoration: none;
-  color: white;
+  color: white !important;
   font-size: 25px;
 }
 
@@ -268,8 +288,18 @@ button {
 .work:hover {
   background: #04b9d1;
   text-decoration: none;
+  color: #333 !important;
   -webkit-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
+}
+
+@media all and (max-width: 700px) {
+  .work:focus {
+    background: #04b9d1;
+    text-decoration: none;
+    -webkit-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+  }
 }
 
 .outer {
@@ -289,7 +319,7 @@ button {
   display: flex;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .portfolio-item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -301,9 +331,19 @@ button {
   padding-left: 20px;
 }
 
+.details a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 700px) {
+  .details a:focus {
+    text-decoration: underline;
+  }
+}
+
 .thumbnail {
-  height: 200px;
-  width: 320px;
+  height: auto;
+  width: 35vw;
   border-radius: 20px;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
@@ -311,15 +351,21 @@ button {
   transition: transform .2s, -webkit-transform .2s;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .thumbnail {
-    height: 30vh;
-    width: 70vw;
+    width: 75vw;
   }
 }
 
 .thumbnail:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media all and (max-width: 700px) {
+  .thumbnail:focus {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 /*# sourceMappingURL=style.css.map */
