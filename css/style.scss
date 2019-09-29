@@ -5,92 +5,6 @@
     }
   }
 
-  @mixin center($extend: true) {
-    @if $extend {
-        @extend %center;
-    } @else {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-}
-
-%center {
-    @include center($extend: false);
-}
-
-@mixin shine1 {
-  &:focus{
-    outline: 0;
-  }
-  &:before{
-    content: '';
-    display: block;
-    position: absolute;
-    //background: rgba(255,255,255,0.5);
-    width: 60px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: .5;
-    filter: blur(30px);
-    transform: translateX(-100px)  skewX(-15deg);
-  }
-  &:after{
-    content: '';
-    display: block;
-    position: absolute;
-    //background: rgba(255,255,255,0.2);
-    width: 30px;
-    height: 100%;
-    left: 30px;
-    top: 0;
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100px) skewX(-15deg);
-  }
-  &:hover{
-    background: $turquoise;
-    cursor: pointer;
-    &:before{
-      transform: translateX(300px)  skewX(-15deg);  
-      opacity: 0.6;
-      transition: .7s;
-    }
-    &:after{
-      transform: translateX(300px) skewX(-15deg);  
-      opacity: 1;
-      transition: .7s;
-    }
-  }
-}
-  
-@mixin shine {
-  &:after {
-    content:'';
-    top:0;
-    transform:translateX(100%);
-    width:100%;
-    height:100%;
-    position: absolute;
-    z-index:1;
-    animation: slide 1s infinite;
-    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
-  }
-}
-  /* animation */
-  @keyframes slide {
-    0% {transform:translateX(-100%);}
-    100% {transform:translateX(100%);}
-  }
-
   // colors
   $white: white;
   $turquoise: #04b9d1;
@@ -317,18 +231,17 @@
     text-decoration: none;
     color: white;
     font-size: 25px;
-    //@include shine;
-    //transform: translateX(-50%) translateY(-50%);
   }
   .workButton a {
     text-decoration: none;
-    position: relative;
-    overflow: hidden;
   }
   .work:hover{
     background: #04b9d1;
     text-decoration: none;
-    @include shine;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+    //@include shine1;
   }
   .outer{
       width:100%;
