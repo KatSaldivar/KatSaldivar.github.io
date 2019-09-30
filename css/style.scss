@@ -9,7 +9,7 @@
   $white: white;
   $turquoise: #04b9d1;
   $grey: #333;
-  $lt-grey: #a6a6a6;
+  $lt-grey: #c0c0c0;
   
   // Navigation
   .main_h {
@@ -141,7 +141,7 @@
   
   .row {
     width: 100vw;
-    max-width: 940px;
+    //max-width: 940px;
     margin: 0 auto;
     position: relative;
     padding: 0 2%;
@@ -174,14 +174,24 @@
     margin-bottom: 0px;
   }
   h1{
-    /*margin: 100px 0px 0px 0px;*/
     font-size: 13vh;
+    @include small{
+      margin-top: 20vh;
+      font-size: 12vw;
+    }
   }
   h2{
     font-size: 10vh;
+    @include small{
+      font-size: 10vw;
+    }
   }
   h3{
     font-size: 6vh;
+    @include small{
+      font-size: 5vw;
+      margin-top: 8vh;
+    }
   }
   h4 {
     font-weight: bold;
@@ -189,6 +199,9 @@
   }
   .section {
     padding: 55px;
+    @include small{
+      padding: 5vw;
+    }
   }
   .title {
     margin-top: 10%;
@@ -251,6 +264,10 @@
     text-decoration: none;
     color: white !important;
     font-size: 25px;
+    margin-top: 10vh;
+    @include small{
+      font-size: 5vw;
+    }
   }
   .workButton a {
     text-decoration: none;
@@ -280,12 +297,17 @@
   .inner{
       display: inline-block;
       vertical-align: top;
+      @include small{
+        display:block;
+        margin:auto;
+      }
   }
   .portfolio-item{
-    margin-top: 40px;
+    margin: 40px auto auto auto;
     display: flex;
     @include small {
       flex-wrap: wrap;
+      margin-bottom: 15vh;
     }
   }
   .details {
@@ -294,6 +316,9 @@
   }
   .details a:hover{
     text-decoration: underline;
+  }
+  .details a:visited{
+    color: white;
   }
 
   .details a:focus{

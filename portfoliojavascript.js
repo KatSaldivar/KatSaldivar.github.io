@@ -33,4 +33,3 @@ $('a').click(function(event) {
 //TO DO:
 //make sure content is responsive
 //try scrolly image thing
-//remove old files from git repo
