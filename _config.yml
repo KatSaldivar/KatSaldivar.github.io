@@ -1,0 +1,16 @@
+# Site settings
+title: KSaldivar
+email: katherinesaldivar1@gmail.com
+description: Portfolio site for Katie Saldivar, passionate about software quality and engineering.
+# this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+twitter_username: KitKatSaldivar
+github_username: KatSaldivar
+linkedin_username: KatSaldivar
+hackerrank_username: KatSaldivar
+freecodecamp_username: KatSaldivar
+
+# Build settings
+markdown: kramdown
