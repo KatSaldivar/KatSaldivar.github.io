@@ -326,6 +326,30 @@ header {
     font-size: 4em;
 }
 
+#contact .fa-linkedin:hover {
+    color: $linkedin;
+}
+
+#contact .fa-twitter:hover {
+    color: $twitter;
+}
+
+#contact .fa-envelope-o:hover {
+    color: $theme-primary;
+}
+
+#contact .fa-github:hover {
+    color: $github;
+}
+
+#contact .fa-hackerrank:hover {
+    color: $hackerrank;
+}
+
+#contact .fa-free-code-camp:hover {
+    color: $freecodecamp;
+}
+
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
