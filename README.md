@@ -1,2 +1,3 @@
 # creative-theme-jekyll-custom
-Testing out jekyll by customizing a creative theme from https://github.com/volny/creative-theme-jekyll
+Trying out jekyll. 
+Thank you volny for providing the theme! https://github.com/volny/creative-theme-jekyll 
